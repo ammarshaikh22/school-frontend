@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* 🔥 CHANGE THIS VALUE TO TEST THEMES */
+:root {
+  --primary: #7c3aed;
+  --background: #f3f4f6;
+  --foreground: #e5e7eb;
+}
+
+/* 🎯 Theme mapping */
+@theme inline {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* 🌙 Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #3b82f6;
+    --background: #e5e7eb;
+    --foreground: #f1f5f9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+body {
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-poppins);
+}
