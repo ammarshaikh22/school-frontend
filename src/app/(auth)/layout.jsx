@@ -1,6 +1,5 @@
 import { Inter, Poppins } from "next/font/google";
-import "./globals.css";
-import AdminSidebar from "@/components/AdminSidebar";
+import "../globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable} h-full `}>
       <body>
-        <AdminSidebar />
         {children}
       </body>
     </html>
