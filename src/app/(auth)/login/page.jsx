@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Login() {
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-[#E5E7EB]">
       
       <div className="w-[700px] h-[400px] rounded-2xl shadow-xl overflow-hidden flex relative">
 
@@ -18,14 +18,12 @@ export default function Login() {
               <label className="text-md mb-2 text-black">Enter your email</label>
               <input
                 type="email"
-                placeholder="Email"
-                className="w-full border border-black rounded-4xl p-2 mt-2 mb-4 "
+                className="w-full border text-black border-black rounded-4xl p-2 mt-2 mb-4 "
               />
               <label className="text-md mb-2 text-black">Enter your password</label>
               <input
                 type="password"
-                placeholder="Password"
-                className="w-full border border-black rounded-4xl mt-2 p-2 mb-4 "
+                className="w-full border text-black border-black rounded-4xl mt-2 p-2 mb-4 "
               />
 
               <p className="text-sm text-black text-center mb-4">

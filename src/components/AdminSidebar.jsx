@@ -36,16 +36,16 @@ const AdminSidebar = () => {
       icon: LayoutDashboard,
       href: '#',
     },
-    {
+     {
       id: 'users',
       label: 'User Management',
       icon: Users,
-      href: '#',
+      href: '/users',
       submenu: [
-        { label: 'Pending Requests', href: '#' },
-        { label: 'All Users', href: '#' },
-        { label: 'Teachers', href: '#' },
-        { label: 'Students', href: '#' },
+        { label: 'Pending Requests', href: '/admin/users?filter=pending' },
+        { label: 'All Users', href: '/admin/users?filter=all' },
+        { label: 'Teachers', href: '/admin/users?filter=teachers' },
+        { label: 'Students', href: '/admin/users?filter=students' },
       ],
     },
     {

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Signup() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen bg-[#E5E7EB] flex items-center justify-center">
       <div className="w-[700px] rounded-2xl shadow-xl overflow-hidden flex relative">
         {/* RIGHT SIDE (ANIMATION PANEL) */}
         <div className="w-1/3 bg-blue-600  flex flex-col items-center justify-center relative">
@@ -24,20 +24,17 @@ export default function Signup() {
             <label className="text-md mb-2 text-black">Enter your name</label>
             <input
               type="text"
-              placeholder="Name"
-              className="w-full border border-black rounded-4xl p-2 mb-6 outline-none"
+              className="w-full border border-black text-black rounded-4xl p-2 mb-6 outline-none"
             />
             <label className="text-md mb-2 text-black">Enter your email</label>
             <input
               type="email"
-              placeholder="Email"
-              className="w-full border border-black rounded-4xl p-2 mb-6 outline-none"
+              className="w-full border text-black border-black rounded-4xl p-2 mb-6 outline-none"
             />
             <label className="text-md mb-2 text-black">Enter your password</label>
             <input
               type="password"
-              placeholder="Password"
-              className="w-full border border-black rounded-4xl p-2 mb-4 outline-none"
+              className="w-full border text-black border-black rounded-4xl p-2 mb-4 outline-none"
             />
 
             <button className="w-full bg-blue-600 text-white py-2 rounded-full">
