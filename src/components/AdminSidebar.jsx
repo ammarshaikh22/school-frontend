@@ -17,6 +17,7 @@ import {
   Menu,
   X,
 } from 'lucide-react';
+import Link from 'next/link';
 
 const AdminSidebar = () => {
   const [expandedMenus, setExpandedMenus] = useState({});
@@ -34,13 +35,13 @@ const AdminSidebar = () => {
       id: 'dashboard',
       label: 'Dashboard',
       icon: LayoutDashboard,
-      href: '#',
+      href: '/admin',
     },
      {
       id: 'users',
       label: 'User Management',
       icon: Users,
-      href: '/users',
+      href: '/admin/users',
       submenu: [
         { label: 'Pending Requests', href: '/admin/users?filter=pending' },
         { label: 'All Users', href: '/admin/users?filter=all' },
@@ -82,7 +83,7 @@ const AdminSidebar = () => {
       id: 'exams',
       label: 'Exams / Results',
       icon: FileText,
-      href: '/admin/exams',
+      href: '#',
       submenu: [
         { label: 'Create Exam', href: '/admin/exams/create' },
         { label: 'Results', href: '/admin/exams/results' },
@@ -179,7 +180,9 @@ const AdminSidebar = () => {
                 >
                   <div className="flex items-center gap-3">
                     <IconComponent className="w-5 h-5 text-gray-600 group-hover:text-gray-900" />
-                    <span className="font-medium text-sm text-start">{item.label}</span>
+                    <Link href={item.href} className="font-medium text-sm text-start">
+                      {item.label}
+                    </Link>
                   </div>
                   {hasSubmenu && (
                     <div
